@@ -32,18 +32,28 @@ function loadingAnimation() {
     tl.to("#loader",{
         opacity:0,
         duration:0.2,
-        delay:4
+        delay:2
     })
 
     tl.from('#page1',{
         delay:0.2,
         y:1600,
         opacity:0,
-        ease:Power4
+        ease:Power4,
+        duration:0.6
     })
 
     tl.to("#loader",{
         display:"none"
+    })
+
+    tl.from('#nav',{
+        opacity:0
+    })
+
+    tl.from(".hero h1",{
+        y:120,
+        stagger:0.2
     })
 
 }
