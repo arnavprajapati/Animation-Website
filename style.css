@@ -1,22 +1,22 @@
 @font-face {
     font-family: japan;
-    src: url('./Gilroy-Medium.ttf');
+    src: url('./assests/fonts/Gilroy-Medium.ttf');
 }
 @font-face {
     font-family: plainLight;
-    src: url('./plain-light-webfont.ttf');
+    src: url('./assests/fonts/plain-light-webfont.ttf');
 }
 @font-face {
     font-family: plainRegular;
-    src: url('./plain-regular-webfont.ttf');
+    src: url('./assests/fonts/plain-regular-webfont.ttf');
 }
 @font-face {
     font-family: silkSerifLight;
-    src: url('./silkserif-lightitalic-webfont.ttf');
+    src: url('./assests/fonts/silkserif-lightitalic-webfont.ttf');
 }
 @font-face {
     font-family: silkSerifRegular;
-    src: url('./silkserif-regularitalic-webfont.ttf');
+    src: url('./assests/fonts/silkserif-regularitalic-webfont.ttf');
 }
 *{
     margin: 0;
