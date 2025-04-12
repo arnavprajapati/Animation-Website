@@ -1,0 +1,134 @@
+@font-face {
+    font-family: japan;
+    src: url('./Gilroy-Medium.ttf');
+}
+@font-face {
+    font-family: plainLight;
+    src: url('./plain-light-webfont.ttf');
+}
+@font-face {
+    font-family: plainRegular;
+    src: url('./plain-regular-webfont.ttf');
+}
+@font-face {
+    font-family: silkSerifLight;
+    src: url('./silkserif-lightitalic-webfont.ttf');
+}
+@font-face {
+    font-family: silkSerifRegular;
+    src: url('./silkserif-regularitalic-webfont.ttf');
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: plainLight;
+}
+html,
+body{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    font-family: japan;
+    color: white;
+}
+
+#loader{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    background-color: #030303;
+    padding: 25vh 10vw;
+}
+.line{
+    /* background-color: red; */
+    height: fit-content;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 3vw;
+}
+
+#line1-part1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.3vw;
+
+}
+
+#line1-part1 h5,#line1-part1 h6{
+    font-size: 3vw;
+    font-weight: 100;
+    font-family: silkSerifLight;
+}
+
+.line h1{
+    font-size: 6.5vw;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.line h2{
+    font-size: 5vw;
+    text-transform: uppercase;
+    font-weight: 900;
+    /* animation-name: anime; */
+    opacity: 0;
+    animation-duration: 1s;
+    animation-iteration-count: infinite
+}
+
+@keyframes anime {
+    0%{
+        font-family: "plainLight";
+        -webkit-text-stroke: 0.1px #fff;
+        color: #fff;
+        font-weight: 500;
+        opacity:1
+    }
+    48%{
+        font-family: "plainLight";
+        -webkit-text-stroke: 0.1px #fff;
+        color: #fff;
+        font-weight: 500;
+        opacity:1
+    }
+    50%{
+        font-family: "silkSerifLight";
+        -webkit-text-stroke: 0.1px #fff;
+        color: #fff;
+        font-weight: 500;
+        opacity:1
+    }
+    100%{
+        font-family: "silkSerifLight";
+        -webkit-text-stroke: 0.1px #fff;
+        color: transparent;
+        font-weight: 900;
+        opacity:0
+    }
+}
+
+#line1-part1 h5{
+    width: 5vw;
+    /* background-color: red;
+     */
+    text-align: right;
+}
+
+#main{
+    position: relative;
+    background-color: #030303;
+    font-weight: 900;
+}
+
+#page1{
+    height: 100vh;
+    width: 100%;
+    background-color: red;
+}
