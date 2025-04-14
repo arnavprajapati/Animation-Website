@@ -90,13 +90,13 @@ body{
     font-size: 5vw;
     text-transform: uppercase;
     font-weight: 900;
-    /* animation-name: anime; */
+    animation-name: loaderAnime;
     opacity: 0;
     animation-duration: 1s;
     animation-iteration-count: infinite
 }
 
-@keyframes anime {
+@keyframes loaderAnime {
     0%{
         font-family: "plainLight";
         -webkit-text-stroke: 0.1px #fff;
